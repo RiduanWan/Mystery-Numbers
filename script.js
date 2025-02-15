@@ -1,11 +1,11 @@
 // script.js
 const correctPins = {
-    1: '1234',
-    2: '5678',
-    3: '91011',
-    4: '1213',
-    5: '1415',
-    6: '1617',
+    1: '0425',
+    2: '8296',
+    3: '4623',
+    4: '2537',
+    5: '5148',
+    6: '8416',
     // Add a PIN for the reset functionality
     reset: '0000' // Set your own PIN for reset
   };
