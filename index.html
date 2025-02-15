@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Kotak PIN</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Mystery Numbers</h1>
+  <div class="button-container">
+    <button onclick="toggleTheme()"><i class="fas fa-moon"></i> Tukar Tema</button>
+    <!-- Reset button with PIN input -->
+    <div>
+      <input type="password" id="resetPin" placeholder="Masukkan PIN untuk Reset">
+      <button onclick="verifyResetPin()"> <i class="fas fa-sync-alt"></i> Reset Game</button>
+    </div>
+  </div>
+  <div class="game-container">
+    <!-- Kotak 1 -->
+    <div class="box" id="box1">
+      <input type="text" id="pin1" placeholder="Masukkan PIN">
+      <button onclick="checkPin(1)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question1">
+        <p><strong>Krida Bina Lingkungan Sehat</strong><br>
+        Rina tinggal di daerah yang sering mengalami banjir akibat saluran air yang tersumbat sampah. Ia ingin membantu warga sekitar untuk menciptakan lingkungan yang lebih sehat. Menurutmu, langkah apa yang harus Rina lakukan agar lingkungan tetap bersih dan bebas dari penyakit?</p>
+      </div>
+    </div>
+    <!-- Kotak 2 -->
+    <div class="box" id="box2">
+      <input type="text" id="pin2" placeholder="Masukkan PIN">
+      <button onclick="checkPin(2)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question2">
+        <p><strong>Krida Bina Keluarga Sehat</strong><br>
+        Keluarga Pak Budi memiliki kebiasaan makan makanan instan dan jarang berolahraga. Akibatnya, anak-anaknya sering mengalami gangguan pencernaan. Jika kamu menjadi anggota keluarga Pak Budi, apa saja kebiasaan sehat yang bisa diterapkan agar keluarga lebih sehat?</p>
+      </div>
+    </div>
+    <!-- Kotak 3 -->
+    <div class="box" id="box3">
+      <input type="text" id="pin3" placeholder="Masukkan PIN">
+      <button onclick="checkPin(3)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question3">
+        <p><strong>Krida Penanggulangan Penyakit</strong><br>
+        Di desa tempat Andi tinggal, terjadi peningkatan kasus demam berdarah. Sebagai anggota Saka Bakti Husada, Andi ingin membantu menanggulangi penyebaran penyakit ini. Apa saja langkah-langkah yang dapat Andi lakukan untuk mencegah dan menanggulangi demam berdarah?</p>
+      </div>
+    </div>
+    <!-- Kotak 4 -->
+    <div class="box" id="box4">
+      <input type="text" id="pin4" placeholder="Masukkan PIN">
+      <button onclick="checkPin(4)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question4">
+        <p><strong>Krida Bina Gizi</strong><br>
+        Siti adalah seorang remaja yang sering merasa lemas dan sulit berkonsentrasi di sekolah. Setelah diperiksa, ternyata ia mengalami anemia karena kekurangan zat besi. Apa saja makanan yang sebaiknya dikonsumsi Siti untuk meningkatkan kadar zat besinya dan menjaga kesehatannya?</p>
+      </div>
+    </div>
+    <!-- Kotak 5 -->
+    <div class="box" id="box5">
+      <input type="text" id="pin5" placeholder="Masukkan PIN">
+      <button onclick="checkPin(5)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question5">
+        <p><strong>Krida Bina Obat</strong><br>
+        Aldi melihat temannya, Rudi, membeli obat di warung tanpa resep dokter. Rudi mengira semua obat bisa dikonsumsi dengan bebas. Sebagai anggota Saka Bakti Husada, bagaimana Aldi bisa menjelaskan kepada Rudi tentang pentingnya memahami obat sebelum mengonsumsinya?</p>
+      </div>
+    </div>
+    <!-- Kotak 6 -->
+    <div class="box" id="box6">
+      <input type="text" id="pin6" placeholder="Masukkan PIN">
+      <button onclick="checkPin(6)"><i class="fas fa-unlock"></i></button>
+      <div class="question" id="question6">
+        <p><strong>Krida Perilaku Hidup Bersih dan Sehat (PHBS)</strong><br>
+        Di sekolah Dito, banyak siswa yang tidak mencuci tangan sebelum makan, sehingga mereka mudah terkena diare. Jika kamu adalah Dito, apa saja cara yang bisa kamu lakukan untuk mengajak teman-temanmu agar lebih peduli terhadap kebersihan tangan dan kesehatan mereka?</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
